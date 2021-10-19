@@ -1,5 +1,6 @@
 import { word } from './Answer.js'
-import { canvas } from "./Canvas.js"
+import { canvas } from './Canvas.js'
+import { isGameOver } from './GameOver.js'
 
 let errors = 0
 
@@ -21,6 +22,10 @@ export function keyboard () {
                 errors++
                 canvas(errors)
             }
+
+            document.querySelectorAll('#keyboard button').forEach(item => item.setAttribute('disabled', ''))
+
+            isGameOver(word, errors) // imported from GameOver
         }))
 
 }

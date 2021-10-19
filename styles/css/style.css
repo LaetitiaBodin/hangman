@@ -39,6 +39,10 @@ canvas {
   font-weight: bold;
 }
 
+#answer span.notFound {
+  color: #6A040F;
+}
+
 #answer span + span {
   margin-left: 10px;
 }
@@ -97,4 +101,75 @@ canvas {
   to {
     opacity: 1;
   }
+}
+
+#game_over {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 600px;
+  max-width: 90%;
+  margin: 30px auto;
+  color: #3F4238;
+}
+
+#game_over * {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+}
+
+#game_over p {
+  width: 200px;
+  margin: 10px auto;
+  overflow-wrap: anywhere;
+}
+
+#game_over button, #game_over a {
+  vertical-align: middle;
+  padding: 4px 10px;
+  border: 2px outset #7F4F24;
+  background-color: #582F0E;
+  color: #FFEDD8;
+}
+
+#game_over a {
+  width: 196px;
+  margin: 10px auto;
+  text-decoration: none;
+}
+
+#game_over button {
+  width: 220px;
+}
+
+#game_over button:hover {
+  cursor: pointer;
+}
+
+#game_over button:active, #game_over button:disabled {
+  border: 2px inset #7F4F24;
+  opacity: 0.5;
+}
+
+#stats p {
+  margin: 4px auto;
+}
+
+#stats p:nth-child(odd) {
+  margin-bottom: 0px;
+}
+
+#stats p:nth-child(even) {
+  margin-top: 0px;
 }

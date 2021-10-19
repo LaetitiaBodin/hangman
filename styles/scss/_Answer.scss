@@ -8,6 +8,9 @@
         color: $Kelp;
         font-size: 30px;
         font-weight: bold;
+        &.notFound {
+            color: $RedOxide;
+        }
         + span {
             margin-left: 10px;
         }
