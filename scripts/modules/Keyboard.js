@@ -1,4 +1,5 @@
 import { word } from './Answer.js'
+import { canvas } from "./Canvas.js"
 
 let errors = 0
 
@@ -18,6 +19,7 @@ export function keyboard () {
                 }
             } else {
                 errors++
+                canvas(errors)
             }
         }))
 

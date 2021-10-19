@@ -16,6 +16,15 @@ h1 {
   color: #3F4238;
 }
 
+canvas {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  max-width: 90%;
+  border: 4px outset #C2C5AA;
+  background-color: #C2C5AA;
+}
+
 #answer {
   text-align: center;
   font-family: 'Noto Sans', sans-serif;

@@ -1,5 +1,7 @@
 import { answer } from "./modules/Answer.js"
 
+import { canvas } from "./modules/Canvas.js"
+
 import { keyboard } from "./modules/Keyboard.js"
 
 function setUp() {
@@ -9,6 +11,7 @@ function setUp() {
         <p id="answer"></p>
         <div id="keyboard"></div>
     `
+    canvas(0)
     setTimeout(() => {
         answer()
         keyboard()
