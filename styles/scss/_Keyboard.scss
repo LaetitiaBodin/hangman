@@ -1,0 +1,33 @@
+#keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+    max-width: 90%;
+    margin: 10px auto;
+    button {
+        width: 30px;
+        height: 30px;
+        margin: 4px;
+        border: 2px outset $BullShot;
+        background-color: $Cioccolato;
+        color: $Derby;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: bold;
+        opacity: 1;
+        animation: 1s linear fadeIn;
+        &:hover {
+            cursor: pointer;
+        }
+        &:disabled, &.isPressed {
+            border: 2px inset $BullShot;
+            opacity: 0.5;
+            cursor: default;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

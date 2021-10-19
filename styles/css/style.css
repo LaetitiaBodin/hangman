@@ -33,3 +33,59 @@ h1 {
 #answer span + span {
   margin-left: 10px;
 }
+
+#keyboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 600px;
+  max-width: 90%;
+  margin: 10px auto;
+}
+
+#keyboard button {
+  width: 30px;
+  height: 30px;
+  margin: 4px;
+  border: 2px outset #7F4F24;
+  background-color: #582F0E;
+  color: #FFEDD8;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  opacity: 1;
+  -webkit-animation: 1s linear fadeIn;
+          animation: 1s linear fadeIn;
+}
+
+#keyboard button:hover {
+  cursor: pointer;
+}
+
+#keyboard button:disabled, #keyboard button.isPressed {
+  border: 2px inset #7F4F24;
+  opacity: 0.5;
+  cursor: default;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
