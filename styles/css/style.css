@@ -15,3 +15,21 @@ h1 {
   font-family: 'Noto Sans', sans-serif;
   color: #3F4238;
 }
+
+#answer {
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#answer span {
+  display: inline-block;
+  width: 30px;
+  border-bottom: 2px solid #7F4F24;
+  color: #3F4238;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#answer span + span {
+  margin-left: 10px;
+}

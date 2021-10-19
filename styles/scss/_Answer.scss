@@ -1,0 +1,15 @@
+#answer {
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    span {
+        display: inline-block;
+        width: 30px;
+        border-bottom: 2px solid $BullShot;
+        color: $Kelp;
+        font-size: 30px;
+        font-weight: bold;
+        + span {
+            margin-left: 10px;
+        }
+    }
+}

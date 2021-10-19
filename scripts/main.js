@@ -1,3 +1,5 @@
+import { answer } from "./modules/Answer.js"
+
 function setUp() {
     document.getElementById('root').innerHTML = `
         <h1>HANGMAN</h1>
@@ -5,6 +7,9 @@ function setUp() {
         <p id="answer"></p>
         <div id="keyboard"></div>
     `
+    setTimeout(() => {
+        answer()
+    }, 6000)
 }
 
 setUp()
